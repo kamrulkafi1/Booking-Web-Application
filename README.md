@@ -1,149 +1,142 @@
-<<<<<<< HEAD
-<h1 align="center">Travel Package Booking Web Application</h1>
+# Travel Package Booking Web Application
 
-<h1 align="center"> With Laravel </h1>
+This repository contains the **Travel Package Booking Web Application**, a Laravel-based platform designed to simplify travel agency operations by allowing users to browse, book, and manage travel packages. The application also provides administrative functionalities for managing bookings, users, and payments.
 
-> [!IMPORTANT]
-> **[View WebApplication UI/UX Design (Figma)](https://www.figma.com/design/E5aFcTBk4oNJvYFS6FPTE7/Travel-Package-Web-App-%22-Sinha-Tour-%22?node-id=0-1&t=4jlFsHrvz8b5hmJM-0)**
-> <br> <br>
-> **[View WebApplication Screenshots](https://dilan032.github.io/Portfolio/projects/TavelPackageBookingWebApplication/TavelPackageBookingWeb.html)**
+---
 
+## Features
 
+### User Features
+- **Registration and Login**: Users can create accounts and log in securely.
+- **Browse Packages**: View detailed travel package descriptions.
+- **Booking**: Book travel packages easily through a user-friendly interface.
+- **Payment Management**: Manage payments and download invoices.
+- **Contact Form**: Send inquiries directly to the agency.
 
+### Admin Features
+- **Admin Dashboard**: Manage packages, bookings, users, and system analytics.
+- **User Management**: Add, edit, and remove users.
+- **Package Management**: Create, update, or delete travel packages.
+- **Booking Management**: Oversee booking statuses and payment information.
+- **Analytics**: View system statistics for business insights.
 
-## The user features  
-- View details about ( travel agency )
-( Blog Post )
-( Travel Packages )
-- Book Travel package ( entering relavet Information ) <br>
-- View Current status about Booking
->  payment -> ( pendin ) ( Conform ) ( Reject ) <br>
->  booking -> ( pendin ) ( Conform ) ( Reject )
-<br>
+---
 
-- View the invoice and pay for the relevant booking
-- contact travel agency using Contact Form ( any one can contact travel agency without login )
-  
-<br><br>
+## Technologies Used
 
-## The Admin features
-- View all summary of the web application <br>
-   >  Users -> ( Active Users ) ( Not active Users ) <br>
-   >  Resavation -> ( All Resavation ) ( Conform Resavation ) ( Reject Resavation ) ( To Check Payment ) <br>
-   >  Blog Post -> All Blog Post  <br>
-   >  Travel Packages -> ( All Travel Packges) ( Adventure Tour ) ( Beach Holiday Tour ) ( Cultural Tour ) ( Business Trip Tour ) 
+### Frontend
+- **Blade**: Templating engine for Laravel.
+- **Tailwind CSS**: For responsive and modern design.
 
-- Manage Users <br>
-   >  Show User Details -> ( Number Of Reservations ) ( Date of Joining ) etc.  <br>
-   >  Contact or Remove User Account 
-    
-- User's Massages <br>
-  >  ( View )
-  > ( Delete )
-  >  ( Show Massage Send Date and Time ) 
-  >  ( Send Email To User )
+### Backend
+- **Laravel Framework**: Robust backend development framework.
+- **Eloquent ORM**: Database operations.
 
-- CRUD Operations For Trvel Package 
-  > ( create )
-  > ( Delete )
-  > ( View )
-  > ( Update )
+### Database
+- **MySQL**: Relational database management.
 
-- CRUD Operations For  Blog Post 
-    > ( create )
-    > ( Delete )
-    > ( View )
-    > ( Update )
+### Security
+- **Laravel Sanctum**: Provides secure user authentication.
 
-<br><br>
+### Deployment
+- **Shared Hosting**: Cost-effective and scalable.
 
-<h1 align="center">How Use This Web Application In Another Computer</h1>
+---
 
-## Install Dependencies:
+## Installation
 
-For PHP dependencies
-`composer install`
+Follow these steps to set up the application locally:
 
-For Node.js dependencies
-`npm install`
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/kamrulkafi1/Booking-Web-Application.git
+   cd Booking-Web-Application
+   ```
 
-<br>
+2. **Install Dependencies**:
+   ```bash
+   composer install
+   npm install
+   ```
 
-## Copy the .env.example File:
-Copy the .env.example file to create a new .env file.
+3. **Set Up Environment**:
+   - Copy the `.env.example` file to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Update database credentials and other environment variables in the `.env` file.
 
-<br>
+4. **Generate Application Key**:
+   ```bash
+   php artisan key:generate
+   ```
 
-## Generate the Application Key:
-`php artisan key:generate`
+5. **Run Database Migrations**:
+   ```bash
+   php artisan migrate
+   ```
 
-<br>
+6. **Start Development Server**:
+   ```bash
+   php artisan serve
+   ```
 
-## Configure the Environment:
-Open the .env file and configure your database
+   Access the application at [http://localhost:8000](http://localhost:8000).
 
-`DB_CONNECTION=mysql` <br>
-`DB_HOST=127.0.0.1` <br>
-`DB_PORT=3306` <br>
-`DB_DATABASE=travel_agency_db` <br>
-`DB_USERNAME=root` <br>
-`DB_PASSWORD=` <br><br>
-`APP_NAME=SriLankaTours` <br>
+---
 
-<br>
+## Usage
 
-## Run Database Migrations:
-> [!WARNING]
-> Run Database Migrations is not recomandaed for this
-`php artisan migrate `
+### Users
+1. Register and log in.
+2. Browse available travel packages.
+3. Book packages and manage your booking status.
+4. Download invoices for completed payments.
+5. Use the contact form for inquiries.
 
-<br>
+### Admins
+1. Log in to the admin dashboard.
+2. Manage travel packages, users, and bookings.
+3. View analytics for business performance.
 
-> [!NOTE]
-> Becouse if your are  Run Database Migrations website has not any data. > ( Blogs, Travel Packages) <br>
-> #But you can Add this data using admin panel
+---
 
-> [!TIP]
-> ### Recomanded
-> In this files has " `Database SQL` " folder and this folder has database file(sql)
-> Name " `travel_agency_db` " use this sql file for database
+## Screenshots
+*(Include relevant screenshots of the application interface.)*
 
-<br><br>
+---
 
-<h1 align="center"> Deploy Web Application </h1>
-    
-## Run the Vite Development Server:
-`npm run dev`
+## ERD (Entity-Relationship Diagram)
+*(Include the ERD diagram illustrating the database schema.)*
 
-<br>
+---
 
-## Start Laravel Development Server:
-`php artisan serve`
+## Contributing
 
-<br>
+1. Fork the repository.
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add feature-name'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a Pull Request.
 
-## Access Your Application:
-Open your browser and navigate to http://127.0.0.1:8000 to verify that your application is working correctly.
+---
 
-<br><br>
+## License
 
-<h1 align="center"> For Login </h1>
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-> [!NOTE]
-> If You are use `Database SQL`  folder's database file (sql), Then you can use this login details.<br>
-> Or register as a new user. <br>
-    
-## Admin
-- Email Address: dilankanishka032@gmail.com <br>
-- Password: 032
+---
 
-## User
-- Email Address: kanishka@gmail.com <br>
-- Password: 12345678
-
-
-
-=======
-# Booking-Web-Application
-Travel Package Booking Web Application
->>>>>>> 540039ca3e22bd8a4f312333de810bb34b9d25b0
+## Contact
+For any inquiries, contact:
+- **Name**: Kamrul Kafi
+- **GitHub**: [kamrulkafi1](https://github.com/kamrulkafi1)
