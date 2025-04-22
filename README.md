@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">Travel Package Booking Web Application</h1>
 
 <h1 align="center"> With Laravel </h1>
@@ -142,3 +143,7 @@ Open your browser and navigate to http://127.0.0.1:8000 to verify that your appl
 
 
 
+=======
+# Booking-Web-Application
+Travel Package Booking Web Application
+>>>>>>> 540039ca3e22bd8a4f312333de810bb34b9d25b0
